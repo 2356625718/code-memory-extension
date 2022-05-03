@@ -113,6 +113,7 @@ const readFile = async () => {
           let res = await codeRequest.getCode({
             userId: user.id,
           });
+          console.log(res)
           if (res.data.status) {
             data = res.data.data.map((item: any) => {
               return {
